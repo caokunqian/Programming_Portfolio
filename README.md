@@ -1,10 +1,12 @@
 # Programming_Portfolio
 
 Class CSDS285
-Author: Jack Qian
-Instructor:
 
----
+Author: Jack Qian
+
+Instructor: Dr. Ronald Loui
+
+ 
 Info
 - The main page is code in html
 - 6 source are code in php/bash
