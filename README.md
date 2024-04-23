@@ -10,6 +10,7 @@ Instructor: Dr. Ronald Loui
 Info
 - The main page is code in html
 - 6 source are code in php/bash
+
 Make sure you log in to CWRU Network:
 - url: http://eecslab-22.case.edu/~cxq72/test.html
 
@@ -20,7 +21,7 @@ Features
 -
 
 ---
-Testing Instruction
+Testing Instruction:
 I am using windows computer and do all the testing under WSL
 - cd to where main.html is
 - sudo apt update
