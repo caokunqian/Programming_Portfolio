@@ -11,6 +11,13 @@ Instructor: Dr. Ronald Loui
 Make sure you log in to CWRU Network:
 - url: http://eecslab-22.case.edu/~cxq72/test.html
 
+Required Libraries:
+
+For Task3:
+- sudo apt install composer
+- composer require erusev/parsedown
+
+
 ---
 Features
 -
@@ -49,5 +56,11 @@ For each php function(enter url in your brower):
 
 example like:
 - http://172.29.13.23/test.php
+
+Debugging:
+add the following to php file:
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 
