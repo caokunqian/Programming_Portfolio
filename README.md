@@ -5,34 +5,31 @@ Class CSDS285
 Author: Jack Qian
 Instructor: Dr. Ronald Loui
 
-- The main page is code in html
-- 6 source are code in php/bash
 
 Make sure you log in to CWRU Network:
-- url: http://eecslab-22.case.edu/~cxq72/test.html
-
-Required Libraries:
-
-For Task3:
-- sudo apt install composer
-- composer require erusev/parsedown
+- url: http://eecslab-22.case.edu/~cxq72/index.php
 
 
 ---
 ## Features
 
-- [Network and Server Health Monitor](script1.php) - A tool to view details of the network interface and server health.
-- [2048 Game](script2.php) - A web-based version of the popular slide puzzle game.
-- [Memory Game](script3.php) - A simple card matching game to test and improve your memory.
-- [Poll Maker](script4.php) - An interactive polling tool with real-time result updates.
-- [To-Do List](script5.php) - Manage your tasks effectively with a dynamic to-do list.
-- [Text Analysis Tool](script6.php) - Analyze text for the most common words, word count, and sentence count.
+- [Network and Server Health Monitor] - A tool to view details of the network interface and server health.
+- [2048 Game] - A web-based version of the popular slide puzzle game.
+- [Memory Game] - A simple card matching game to test and improve your memory.
+- [Poll Maker] - An interactive polling tool with real-time result updates.
+- [To-Do List] - Manage your tasks effectively with a dynamic to-do list.
+- [Text Analysis Tool] - Analyze text for the most common words, word count, and sentence count.
 
 
 ---
-Testing Instruction:
+# Version Control & AI tools
+- I don't know how to provide it but this class is first time for me to learn php, so all of code are done this semester
+you can view change log through https://github.com/caokunqian/Programming_Portfolio/commits/main/
+- I only use AI for css style, I coded all core functions
+---
+## Testing Instruction:
 
-I am using windows computer and do all the testing under WSL
+I am using windows computer and do all the testing under WSL(vpn access school server is solve qwq)
 
 - cd to where main.html is
 - sudo apt update
