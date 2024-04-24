@@ -11,6 +11,12 @@ Instructor: Dr. Ronald Loui
 Make sure you log in to CWRU Network:
 - url: http://eecslab-22.case.edu/~cxq72/test.html
 
+Required Libraries:
+
+For Task3:
+-composer require erusev/parsedown
+
+
 ---
 Features
 -
