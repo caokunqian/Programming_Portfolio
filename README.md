@@ -19,10 +19,15 @@ For Task3:
 
 
 ---
-Features
--
--
--
+## Features
+
+- [Network and Server Health Monitor](script1.php) - A tool to view details of the network interface and server health.
+- [2048 Game](script2.php) - A web-based version of the popular slide puzzle game.
+- [Memory Game](script3.php) - A simple card matching game to test and improve your memory.
+- [Poll Maker](script4.php) - An interactive polling tool with real-time result updates.
+- [To-Do List](script5.php) - Manage your tasks effectively with a dynamic to-do list.
+- [Text Analysis Tool](script6.php) - Analyze text for the most common words, word count, and sentence count.
+
 
 ---
 Testing Instruction:
