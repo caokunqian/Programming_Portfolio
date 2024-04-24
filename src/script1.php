@@ -1,23 +1,23 @@
 <?php
-// Function to get network interface details using 'ip addr' command
+// get network interface details using 'ip addr' command
 function getNetworkInterfaces() {
-    // Execute command and return output
+    //  return output
     $output = shell_exec('ip addr');
     return $output;
 }
 
-// Function to get server health details like CPU load, memory and disk usage
+//  get server health details like CPU load
 function getServerHealth() {
-    // Get CPU Load
+    // CPU Load
     $cpuLoad = sys_getloadavg();
-    // Get Memory Usage
+    // Memory Usage
     $memInfo = explode("\n", shell_exec('free -m'));
     $memParts = preg_split('/\s+/', $memInfo[1]);
     $memTotal = $memParts[1];
     $memUsed = $memParts[2];
-    // Calculate memory usage percentage
+    // memory usage percentage
     $memUsagePercent = ($memUsed / $memTotal) * 100;
-    // Get Disk Usage
+    // Disk Usage
     $diskUsage = shell_exec('df -h');
     $cpuCores = shell_exec("nproc");
     $serverHealth['cpuLoadPercent'] = ($serverHealth['cpuLoad'][0] / $cpuCores) * 100;
@@ -28,7 +28,7 @@ function getServerHealth() {
     ];
 }
 
-// Fetch information
+// get information
 $networkInfo = getNetworkInterfaces();
 $serverHealth = getServerHealth();
 ?>
@@ -55,6 +55,23 @@ $serverHealth = getServerHealth();
         margin-bottom: 20px; /* Adds some space below the description */
         font-size: 1.1em; /* Slightly larger font size for better readability */
     }
+    .back-to-main-button {
+    position: fixed; /* Fixed position */
+    top: 10px; /* 10px from the top */
+    right: 10px; /* 10px from the right */
+    background-color: #FF3B30; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Make sure it's above other items */
+}
+
+.back-to-main-button:hover {
+    background-color: #4CAF50; /* Green background on hover */
+}
+
     </style>
 </head>
 
@@ -68,6 +85,8 @@ $serverHealth = getServerHealth();
         <p>You can click the following buttom to get real-time page:</p>
     </div>
     <button class="refresh-button" onclick="window.location.reload();">Refresh</button>
+    <button class="back-to-main-button" onclick="window.location.href='index.php';">Back to Main Page</button>
+
        
     <h2>Network Interface Details</h2>
     <pre><?= htmlspecialchars($networkInfo) ?></pre>

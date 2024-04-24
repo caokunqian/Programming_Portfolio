@@ -163,7 +163,7 @@ initBoard();
     <title>2048 Game</title>
     <form id="restartForm" action="script2.php" method="post">
     <input type="hidden" name="restart" value="1">
-</form>
+    </form>
     <style>
         body { font-family: Arial, sans-serif; }
         .game-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 400px; margin: auto; }
@@ -198,11 +198,29 @@ initBoard();
         .game-over #message {
             display: block;
         }
+        .back-to-main-button {
+            position: fixed; /* Fixed position */
+            top: 10px; /* 10px from the top */
+            right: 10px; /* 10px from the right */
+            background-color: #FF3B30; /* Red background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Make sure it's above other items */
+        }
+
+        .back-to-main-button:hover {
+            background-color: #4CAF50; /* Green background on hover */
+        }
+
     </style>
 </head>
 <body class="<?= isset($_SESSION['message']) ? 'game-over' : '' ?>">
     <div id="overlay"></div>
-    <h2>2048 Game</h2>
+    <h1>2048 Game</h1>
+    <button class="back-to-main-button" onclick="window.location.href='index.php';">Back to Main Page</button>
     <p>Use WASD or arrow keys to move the tiles. Merge them to reach 2048!</p>
     <form action="script2.php" method="post">
         <div class="game-container">

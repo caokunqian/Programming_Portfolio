@@ -1,14 +1,14 @@
 <?php
-// Start PHP session to manage game state across page reloads.
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['restart'])) {
-        // Clear session data to restart the game
+        // Clear 
         session_destroy();
         session_start();
     }
-    // Redirect to clean POST request and refresh the game
+    
     header("Location: script3.php");
     exit;
 }
@@ -29,6 +29,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .hidden { background: #666; }
         button { padding: 8px 16px; margin: 10px; font-size: 18px; cursor: pointer; }
         .counter { text-align: center; font-size: 18px; }
+        .back-to-main-button {
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    background-color: #FF3B30; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-main-button:hover {
+    background-color: #4CAF50; /* Green background on hover */
+}
+
     </style>
 </head>
 <body>
@@ -45,6 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button onclick="restartGame();">Restart Game (New Cards)</button>
         <button onclick="tryAgain();">Try Again (Same Cards)</button>
         <button onclick="resetCount();">Reset Count</button>
+        <button class="back-to-main-button" onclick="window.location.href='index.php';">Back to Main Page</button>
+
     </div>
 
     <script>
