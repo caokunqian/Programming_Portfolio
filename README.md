@@ -14,7 +14,8 @@ Make sure you log in to CWRU Network:
 Required Libraries:
 
 For Task3:
--composer require erusev/parsedown
+- sudo apt install composer
+- composer require erusev/parsedown
 
 
 ---
