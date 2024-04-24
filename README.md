@@ -1,31 +1,27 @@
-# Programming_Portfolio
+# Programming Portfolio
 
-Class CSDS285
+**Class:** CSDS285  
+**Author:** Jack Qian  
+**Instructor:** Dr. Ronald Loui  
 
-Author: Jack Qian
-Instructor: Dr. Ronald Loui
+Please ensure you are logged into the CWRU Network to access the portfolio:  
+- URL: [http://eecslab-22.case.edu/~cxq72/index.php](http://eecslab-22.case.edu/~cxq72/index.php)
 
-
-Make sure you log in to CWRU Network:
-- url: http://eecslab-22.case.edu/~cxq72/index.php
-
-
----
 ## Features
 
-- [Network and Server Health Monitor] - A tool to view details of the network interface and server health.
-- [2048 Game] - A web-based version of the popular slide puzzle game.
-- [Memory Game] - A simple card matching game to test and improve your memory.
-- [Poll Maker] - An interactive polling tool with real-time result updates.
-- [To-Do List] - Manage your tasks effectively with a dynamic to-do list.
-- [Text Analysis Tool] - Analyze text for the most common words, word count, and sentence count.
+- [Network and Server Health Monitor](http://eecslab-22.case.edu/~cxq72/script1.php) - A tool to view details of the network interface and server health.
+- [2048 Game](http://eecslab-22.case.edu/~cxq72/script2.php) - A web-based version of the popular slide puzzle game.
+- [Memory Game](http://eecslab-22.case.edu/~cxq72/script3.php) - A simple card matching game to test and improve your memory.
+- [Poll Maker](http://eecslab-22.case.edu/~cxq72/script4.php) - An interactive polling tool with real-time result updates.
+- [To-Do List](http://eecslab-22.case.edu/~cxq72/script5.php) - Manage your tasks effectively with a dynamic to-do list.
+- [Text Analysis Tool](http://eecslab-22.case.edu/~cxq72/script6.php) - Analyze text for the most common words, word count, and sentence count.
 
+## Version Control & AI Tools
 
----
-# Version Control & AI tools
-- I don't know how to provide it but this class is first time for me to learn php, so all of code are done this semester
-you can view change log through https://github.com/caokunqian/Programming_Portfolio/commits/main/
-- I only use AI for css style, I coded all core functions
+This is my first time learning PHP in this class, so all the code was written during this semester. You can view the change log at [GitHub commit history](https://github.com/caokunqian/Programming_Portfolio/commits/main/).
+
+The CSS styles were aided by an AI tool, but all core functions were coded by me.
+
 ---
 ## Testing Instruction:
 
