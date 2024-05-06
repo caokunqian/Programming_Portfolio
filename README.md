@@ -21,7 +21,7 @@ Please ensure you are logged into the CWRU Network to access the portfolio:
 This is my first time learning PHP in this class, so all the code was written during this semester. You can view the change log at [GitHub commit history](https://github.com/caokunqian/Programming_Portfolio/commits/main/).
 
 The CSS styles were aided by an AI tool, but all core functions were coded by me.
-(background photo token in Australia)
+
 
 ---
 ## Testing Instruction:
